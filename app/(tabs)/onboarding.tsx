@@ -1,4 +1,4 @@
-import { useUserStore } from "@/store/userStore";
+import { useUserStore } from "../../store/userStore";
 import { theme } from "../../theme";
 import { useRouter } from "expo-router";
 import { View, Text, StyleSheet, Button } from "react-native";

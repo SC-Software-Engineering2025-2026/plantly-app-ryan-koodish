@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { persist, createJSONStorage } from "zutand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
 
 type UserStore = {
     hasFinishedOnboarding: boolean;
