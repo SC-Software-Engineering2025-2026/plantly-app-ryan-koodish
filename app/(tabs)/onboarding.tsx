@@ -1,8 +1,10 @@
-import { PlantlyButton } from "@/components/PlantlyButton";
+import { PlantlyButton } from "../../components/PlantlyButton";
 import { useUserStore } from "../../store/userStore";
 import { theme } from "../../theme";
+import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet } from "react-native";
 
 export default function OnboardingScreen() {
     const router = useRouter();
@@ -12,9 +14,15 @@ export default function OnboardingScreen() {
         router.replace("/");
     };
     return (
-        <View style={StyleSheet.container}>
-            <PlantlyButton title="Let me in!" onPress={handlePress} />
-        </View>
+        <LinearGradient
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            colors={[theme.colorGreen, theme.colorAppleGreen, theme.colorLimeGreen]}
+            style={styles.container}
+        >
+            <StatusBar style="light" />
+            <PlantlyButton title="Let Me In!!" onPress={handlePress} />
+        </LinearGradient>
     );
 }
 
