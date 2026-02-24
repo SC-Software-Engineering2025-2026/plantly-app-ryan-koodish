@@ -12,7 +12,7 @@ export const useUserStore = create(
         (set) => ({
             hasFinishedOnboarding: false,
             toggleHasOnboarded: () => {
-                set((state) => {
+                return set((state) => {
                     return {
                         ...state,
                         hasFinishedOnboarding: !state.hasFinishedOnboarding,
