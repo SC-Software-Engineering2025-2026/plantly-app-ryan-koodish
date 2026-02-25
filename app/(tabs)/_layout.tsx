@@ -5,10 +5,9 @@ import { AntDesign } from "@expo/vector-icons/AntDesign";
 import { Pressable } from "react-native";
 import { Link } from "expo-router";
 
-
 export default function Layout() {
   const hasFinishedOnboarding = useUserStore(
-    (state) => state.hasFinishedOnboarding
+    (state) => state.hasFinishedOnboarding,
   );
   if (!hasFinishedOnboarding) {
     return <Redirect href="/onboarding" />;
@@ -48,5 +47,5 @@ export default function Layout() {
         }}
       />
     </Tabs>
-  )
+  );
 }
