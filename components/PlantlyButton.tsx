@@ -1,6 +1,7 @@
-import { theme } from "@/theme";
+import { theme } from "../theme";
 import { StyleSheet, Text, Pressable, Platform } from "react-native";
 import * as Haptics from "expo-haptics";
+import React from "react";
 
 type Props = {
   title: string;
@@ -24,10 +25,10 @@ export function PlantlyButton({ title, onPress }: Props) {
             }
             return styles.button;
         }}
-    />
+    >
         <Text style={styles.text}>{title}</Text>
     </Pressable>
-  )
+  );
 }
 
 const styles = StyleSheet.create({

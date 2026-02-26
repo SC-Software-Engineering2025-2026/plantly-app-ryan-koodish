@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View, StyleSheet, Button } from "react-native";
-import { theme } from "../..//theme";
+import { theme } from "../../theme";
 import { useUserStore } from "../../store/userStore";
-import { PlantlyButton } from "@/components/PlantlyButton";
+import { PlantlyButton } from "../../components/PlantlyButton";
 
 export default function ProfileScreen() {
   const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);

@@ -1,5 +1,6 @@
+import React from "react";
 import { PlantlyButton } from "../../components/PlantlyButton";
-import { PlantlyImage } from "@/components/PlantlyImage";
+import { PlantlyImage } from "../../components/PlantlyImage";
 import { useUserStore } from "../../store/userStore";
 import { theme } from "../../theme";
 import { LinearGradient } from "expo-linear-gradient";

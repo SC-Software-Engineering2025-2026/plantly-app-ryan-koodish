@@ -6,11 +6,12 @@ import {
   ScrollView,
   View,
 } from "react-native";
-import { theme } from "@/theme";
-import { PlantlyButton } from "@/components/PlantlyButton";
+import { theme } from "../theme";
+import { PlantlyButton } from "../components/PlantlyButton";
 import { useState } from "react";
-import { PlantlyImage } from "@/components/PlantlyImage";
+import { PlantlyImage } from "../components/PlantlyImage";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import React from "react";
 
 export default function NewScreen() {
   const [name, setName] = useState<string>();

@@ -1,9 +1,11 @@
-import Feather from "@expo/vector-icons";
 import { theme } from "../../theme";
 import { useUserStore } from "../../store/userStore";
-import { AntDesign } from "@expo/vector-icons/AntDesign";
+import { AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
-import { Link } from "expo-router";
+import { Link, Redirect, Tabs } from "expo-router";
+import React from "react";
 
 export default function Layout() {
   const hasFinishedOnboarding = useUserStore(
