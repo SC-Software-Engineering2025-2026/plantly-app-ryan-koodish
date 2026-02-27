@@ -1,7 +1,8 @@
 import { StyleSheet, View, Text } from "react-native";
-import { theme } from "@/theme";
-import { PlantType } from "@/store/plantsStore";
+import { theme } from "../theme";
+import { PlantType } from "../store/plantsStore";
 import { PlantlyImage } from "./PlantlyImage";
+import React from "react";
 
 export function PlantCard({ plant }: { plant: PlantType }) {
   return (

@@ -13,7 +13,7 @@ type Props = {
 
     return (
         <Image
-        source={imageUri ? { uri: imageUri } : require("@/assets/plantly.png")}
+        source={imageUri ? { uri: imageUri } : require("../assets/plantly.png")}
         style={{ width: imageSize, height: imageSize, borderRadius: 6 }}
     />
     );
