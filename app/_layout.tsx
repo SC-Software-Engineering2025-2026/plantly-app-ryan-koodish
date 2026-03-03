@@ -1,8 +1,7 @@
 import React from "react";
-import { Tabs, Stack } from "expo-router";
-import Entypo from "@expo/vector-icons/Entypo";
-import Feather from "@expo/vector-icons/Feather";
-import { theme } from "../../theme";
+import { SplashScreen, Stack } from "expo-router";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
   return (
