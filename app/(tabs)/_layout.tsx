@@ -7,11 +7,13 @@ import React from "react";
 
 
 export default function Layout() {
-  SplashScreen.hideAsync();
-  
   const hasFinishedOnboarding = useUserStore(
     (state) => state.hasFinishedOnboarding,
   );
+
+  React.useEffect(() => {
+    SplashScreen.hideAsync();
+  }, []);
   if (!hasFinishedOnboarding) {
     return <Redirect href="/onboarding" />;
   }
