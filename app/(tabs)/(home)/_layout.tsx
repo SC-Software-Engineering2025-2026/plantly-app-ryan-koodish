@@ -1,7 +1,8 @@
-import { theme } from "../../theme";
+import { theme } from "../../../theme";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { Link, Stack } from "expo-router";
 import { Pressable } from "react-native";
+import React from "react";
 
 export default function Layout() {
   return (

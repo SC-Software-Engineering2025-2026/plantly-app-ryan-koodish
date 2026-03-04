@@ -1,11 +1,11 @@
 import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { View, Text, StyleSheet, Pressable, Alert } from "react-native";
-import { usePlantStore } from "../../store/plantsStore";
+import { usePlantStore } from "../../../../store/plantsStore";
 import { differenceInCalendarDays, format } from "date-fns";
-import { PlantlyButton } from "../../components/PlantlyButton";
-import { theme } from "../theme";
+import { PlantlyButton } from "../../../../components/PlantlyButton";
+import { theme } from "../../../../theme";
 import { useEffect } from "react";
-import { PlantlyImage } from "../../components/PlantlyImage";
+import { PlantlyImage } from "../../../../components/PlantlyImage";
 import React from "react";
 
 const fullDateFormat = "LLL d yyyy, h:mm aaa";
