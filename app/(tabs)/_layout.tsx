@@ -3,17 +3,12 @@ import { theme } from "../../theme";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
 import { useUserStore } from "../../store/userStore";
-import React from "react";
-
 
 export default function Layout() {
+  SplashScreen.hideAsync();
   const hasFinishedOnboarding = useUserStore(
     (state) => state.hasFinishedOnboarding,
   );
-
-  React.useEffect(() => {
-    SplashScreen.hideAsync();
-  }, []);
   if (!hasFinishedOnboarding) {
     return <Redirect href="/onboarding" />;
   }
