@@ -68,7 +68,7 @@ export default function NewScreen() {
   };
 
   return (
-    <KeyboardAwareScrollView
+    <ScrollView
       style={styles.container}
       contentContainerStyle={styles.contentContainer}
       keyboardShouldPersistTaps="handled"
@@ -97,7 +97,7 @@ export default function NewScreen() {
         keyboardType="number-pad"
       />
       <PlantlyButton title="Add plant" onPress={handleSubmit} />
-    </KeyboardAwareScrollView>
+    </ScrollView>
   );
 }
 
@@ -105,12 +105,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.colorWhite,
-    justifyContent: "center",
+    
   },
   contentContainer: {
     paddingTop: 24,
     paddingHorizontal: 24,
     paddingBottom: 100,
+    justifyContent: "center",
   },
   input: {
     borderWidth: 2,
